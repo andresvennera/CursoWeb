@@ -193,3 +193,24 @@ aside {
 .border {
     border: 1px solid black;
     }
+
+.texto-animado{
+    animation-name: texto;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+}
+@keyframes texto{
+    from{
+        transform: translateX(100%) scale(.25,.25);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+.grad-lineal{
+    background-image: linear-gradient(to left, cyan,pink);
+}
+
+.grad-radial{
+    background-image: radial-gradient(cyan, blue);
+}
