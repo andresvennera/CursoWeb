@@ -214,3 +214,11 @@ aside {
 .grad-radial{
     background-image: radial-gradient(cyan, blue);
 }
+
+
+.imagen {
+    transition: transform .7s ease-in-out;
+  }
+.imagen:hover {
+    transform: rotate(360deg);
+  }
