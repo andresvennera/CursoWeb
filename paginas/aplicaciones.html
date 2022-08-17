@@ -2,19 +2,42 @@
 <html>
     <head>
         <title>CompMec-Aplicaciones</title>
-        <link rel="stylesheet" href="../css/estilos.css">
+        <!-- agrego el link del cdn de Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
         <link rel="icon" type="image/x-icon" href="../imagenes/favicon-16x16.png">
     </head>
     <body>
         <header>
             <h1>Componentes Mecanicos</h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="aplicaciones.html">APLICACIONES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
+             <!-- navbar con bootstrap-->
+             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">MENU</a>
+
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="aplicaciones.html">APLICACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contacto.html">CONTACTO</a>
+                        </li>
+
+                    </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header>
 
