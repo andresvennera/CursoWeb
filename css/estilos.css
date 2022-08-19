@@ -8,7 +8,7 @@
 /* Estructura de la grilla*/
 
 /*para un celu*/
-@media  screen and (max-width: 600px) {
+/*@media  screen and (max-width: 600px) {
     #grilla {
         display: grid;
         grid-template-areas:
@@ -32,7 +32,7 @@
     }
 
     /*para una tablet*/
-    @media screen and (min-width: 601px) and (max-width: 1023px) {
+   /* @media screen and (min-width: 601px) and (max-width: 1023px) {
         #grilla {
             display: grid;
             grid-template-areas:
@@ -50,7 +50,7 @@
     
         }
 /*para una PC de escritorio*/
-    @media screen and (min-width: 1024px) {
+ /*   @media screen and (min-width: 1024px) {
         #grilla {
             display: grid;
             grid-template-areas:
@@ -67,7 +67,7 @@
             }
     
         }
-
+*/
 
 body header h1{
     color:rgb(62, 185, 207);
@@ -80,7 +80,7 @@ header{
     background-color:#cdffff;
     background-image:url('../imagenes/logo_CM.png');
     background-position-x: left;
-    background-size: 25%;
+    background-size: 5%;
     background-repeat: no-repeat;
     grid-area: header; /* etiqueta de la sección en el grid*/
 }
