@@ -5,82 +5,32 @@
     padding:0;
 }
 
-/* Estructura de la grilla*/
+/* COLORES MÁS UTILIZADOS*/
+$AZULCITO_CLARO: #cdffff;
+$AZUL_CELESTITO:rgb(62, 185, 207);
 
-/*para un celu*/
-/*@media  screen and (max-width: 600px) {
-    #grilla {
-        display: grid;
-        grid-template-areas:
-        "header"
-        "nav"
-        "presentacion"
-        "productos"
-        "clientes"
-        "publicidad"
-        "footer";
-        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr 1fr;
-        grid-template-columns: 100%;
+
+
+body {
     
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
-        justify-items: stretch;
-        align-items:stretch;
+    header{
+        background-color: $AZULCITO_CLARO;
+        background-image:url('../imagenes/logo_CM.png');
+        background-position-x: left;
+        background-size: 5%;
+        background-repeat: no-repeat;
+        grid-area: header; /* etiqueta de la sección en el grid*/
+
+        h1{
+            color:$AZUL_CELESTITO;
+            font-family: Lato;
+            font-weight: bolder;
+            text-align: center;
         }
     }
-    /*para una tablet*/
-   /* @media screen and (min-width: 601px) and (max-width: 1023px) {
-        #grilla {
-            display: grid;
-            grid-template-areas:
-            "header header"
-            "nav nav"
-            "presentacion publicidad"
-            "productos publicidad"
-            "clientes footer";
-            grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
-            grid-template-columns: 60% 40%;
-        
-            grid-column-gap: 10px;
-            grid-row-gap: 15px;
-            }
-    
-        }
-/*para una PC de escritorio*/
- /*   @media screen and (min-width: 1024px) {
-        #grilla {
-            display: grid;
-            grid-template-areas:
-            "nav header header"
-            "nav presentacion publicidad"
-            "nav productos publicidad"
-            "nav clientes publicidad"
-            "nav footer footer";
-            grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
-            grid-template-columns: 20% auto 15%;
-        
-            grid-column-gap: 10px;
-            grid-row-gap: 15px;
-            }
-    
-        }
-*/
-
-body header h1{
-    color:rgb(62, 185, 207);
-    font-family: Lato;
-    font-weight: bolder;
-    text-align: center;
 }
 
-header{
-    background-color:#cdffff;
-    background-image:url('../imagenes/logo_CM.png');
-    background-position-x: left;
-    background-size: 5%;
-    background-repeat: no-repeat;
-    grid-area: header; /* etiqueta de la sección en el grid*/
-}
+
 
 /*
 nav ul {
@@ -94,36 +44,19 @@ nav ul li {
 
 
 footer{
-    background-color: aquamarine;
-    font-weight: bold;  
+    section{
+        background-color: $AZULCITO_CLARO;
+        font-weight: bold;  
+    }
+    
     margin-bottom: 10px; 
     padding: 15px;
     grid-area: footer; /* etiqueta de la sección en el grid*/
 }
 
-section#PRODUCTOS {
-    grid-area: productos;
-}
-
-section#PRESENTACION {
-    grid-area: presentacion;
-}
-
-section#CLIENTES {
-    grid-area: clientes;
-}
-
-nav {
-    grid-area: nav;
-    }
-    
-aside {
-    grid-area: publicidad;
-    }
-
 .listaHorizontal{
     display:inline;
-    border-color: aqua;
+    border-color: $AZULCITO_CLARO;
     border-style: solid;
     text-align: center;
 
@@ -214,7 +147,90 @@ aside {
 
 .imagen {
     transition: transform .7s ease-in-out;
+
+    &:hover{transform: rotate(360deg);
+
+    }
   }
-.imagen:hover {
-    transform: rotate(360deg);
-  }
+
+  /* Estructura de la grilla*/
+
+/*para un celu*/
+/*@media  screen and (max-width: 600px) {
+    #grilla {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "nav"
+        "presentacion"
+        "productos"
+        "clientes"
+        "publicidad"
+        "footer";
+        grid-template-rows: 1fr 1fr 2fr 2fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+    
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+        justify-items: stretch;
+        align-items:stretch;
+        }
+    }
+    /*para una tablet*/
+   /* @media screen and (min-width: 601px) and (max-width: 1023px) {
+        #grilla {
+            display: grid;
+            grid-template-areas:
+            "header header"
+            "nav nav"
+            "presentacion publicidad"
+            "productos publicidad"
+            "clientes footer";
+            grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+            grid-template-columns: 60% 40%;
+        
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+            }
+    
+        }
+/*para una PC de escritorio*/
+ /*   @media screen and (min-width: 1024px) {
+        #grilla {
+            display: grid;
+            grid-template-areas:
+            "nav header header"
+            "nav presentacion publicidad"
+            "nav productos publicidad"
+            "nav clientes publicidad"
+            "nav footer footer";
+            grid-template-rows: 1fr 2fr 2fr 1fr 1fr;
+            grid-template-columns: 20% auto 15%;
+        
+            grid-column-gap: 10px;
+            grid-row-gap: 15px;
+            }
+    
+        }
+*/
+/*
+section#PRODUCTOS {
+    grid-area: productos;
+}
+
+section#PRESENTACION {
+    grid-area: presentacion;
+}
+
+section#CLIENTES {
+    grid-area: clientes;
+}
+
+nav {
+    grid-area: nav;
+    }
+    
+aside {
+    grid-area: publicidad;
+    }
+*/
